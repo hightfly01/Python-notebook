@@ -1,0 +1,63 @@
+site_name: Python-notebook
+
+# readthedocs   material
+theme:  material
+use_directory_urls: true
+
+docs_dir: 'docs'
+
+
+pages:
+- 首页: 'index.md'
+
+- 正则表达式:
+  - re模块: 're/1.md'
+- 枚举类:
+  - 枚举类型: 'enum/1.md'
+- 函数式编程:
+  - 闭包: 'func/1.md'
+  - 匿名函数: 'func/2.md'
+  - 高阶函数: 'func/4.md'
+  - 装饰器: 'func/5.md'
+- 内建模块(标准库):
+  - collections: 'lib/1.md'
+  - datetime: 'lib/2.md'
+  - functools: 'lib/3.md'
+  - hashlib: 'lib/4.md'
+  - itertools: 'lib/5.md'
+  - operator: 'lib/6.md'
+  - os/sys: 'lib/7.md'
+  - operator: 'lib/8.md'
+- 内存管理机制:
+  - 内存管理: 'memory/1.md'
+- pythonic:
+  - 三元表达式: 'pynic/3.md'
+  - 字典代替switch: 'pynic/1.md'
+  - 推导式: 'pynic/2.md'
+
+
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/hightfly01/Python-notebook'
+
+
+# Copyright
+copyright: 'Copyright (c) 2018 hightfly'
+
+
+extra:
+  palette:
+    primary: 'blue grey'
+    accent: 'blue grey'
+  author:
+    github: 'hightfly01'
+
+
+# Extensions
+markdown_extensions:
+  #高亮
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
