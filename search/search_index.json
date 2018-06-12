@@ -1,0 +1,274 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to python\n#",
+            "title": "\u9996\u9875"
+        },
+        {
+            "location": "/#welcome-to-python",
+            "text": "",
+            "title": "Welcome to python"
+        },
+        {
+            "location": "/re/1/",
+            "text": "\u5143\u5b57\u7b26\u548c\u666e\u901a\u5b57\u7b26\n#\n\n\n\u5143\u5b57\u7b26\n#\n\n\n\n\n\\d: \u5339\u914d\u6570\u5b57\n\n\n\\D: \u5339\u914d\u975e\u6570\u5b57\n\n\n\n\n\u6f14\u793a-1\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'java4c#34python55javacript9'\n\n\n# \u5339\u914d\u5b57\u7b26\u4e32\u4e2d\u6570\u5b57\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'\\d'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n# \u8f93\u51fa\u7ed3\u679c:['4', '3', '4', '5', '5', '9']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'34JAVA45423'\n\n\n# \u5339\u914d\u5b57\u7b26\u4e32\u4e2d\u975e\u6570\u5b57\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'\\D'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n# \u8f93\u51fa\u7ed3\u679c:['J', 'A', 'V', 'A']\n\n\n\n\n\n\n\u5b57\u7b26\u96c6\n#\n\n\n\n\n[\u5b57\u7b26]:\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\uff0c\u8868\u793a\u6216\u5173\u7cfb\u3002\n\n\n[\u5b57\u7b26-\u5b57\u7b26]:\u5339\u914d\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\u5230\u5b57\u7b26\u7684\u5b57\u7b26\uff0c\u8868\u793a\u6216\u5173\u7cfb\u3002\n\n\n[^\u5b57\u7b26]: \u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\uff0c\u5bf9\u5339\u914d\u7684\u5b57\u7b26\u53d6\u53cd\u3002\n\n\n\n\n\n\u6f14\u793a-1\uff1a\u5339\u914d\u5b57\u7b26\u4e2d\uff0cac\u4e2d\u95f4\u5305\u542bd\u6216f\u7684\u5b57\u7b26\n\n\n  \nimport\n \nre\n\n\n  \ns\n \n=\n \n'abc, adc, aec, afc, ahc'\n\n  \n# \u5339\u914d\u5b57\u7b26\u4e2d\uff0cac\u4e2d\u95f4\u5305\u542bd\u6216f\u7684\u5b57\u7b26\n\n  \nr\n \n=\n \nre\n.\nfindall\n(\n'a[df]c'\n,\n \ns\n)\n\n  \nprint\n(\nr\n)\n\n  \n#\u8f93\u51fa\u7ed3\u679c\uff1a['adc', 'afc']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\u5339\u914d\uff0c\u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'abc, adc, aec, afc, ahc'\n\n\n# \u5339\u914d\uff0c\u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'a[^df]c'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['abc', 'aec', 'ahc']\n\n\n\n\n\n\n\u6f14\u793a-3\uff1a\u5339\u914d\u5b57\u7b26c\u5230f\u4e4b\u95f4\u7684\u5b57\u7b26\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'abc, acc, adc, aec, afc, ahc'\n\n\n# \u5339\u914dc-f\u4e4b\u95f4\u7684\u5b57\u7b26\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'a[c-f]c'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['acc', 'adc', 'aec', 'afc']\n\n\n\n\n\n\n\u6982\u62ec\u5b57\u7b26\u96c6\n#\n\n\n\n\n\\d: \u5339\u914d0-9\u7684\u6570\u5b57\u3002\u628a[0-9]\u7684\u8868\u8fbe\u5f0f\u6982\u62ec\u6210\u4e86: \\d\n\n\n\\w: \u5339\u914d\u5355\u8bcd\u5b57\u7b26\u3002\u628a [A-Za-z0-9_]\u7684\u8868\u793a\u5f0f\u6982\u62ec\u4e86: \\w\n\n\n\\W: \u5339\u914d\u975e\u5355\u8bcd\u5b57\u7b26\u3002 \u6ce8\u610f\uff1a(' ', \\t, &, \\n, \\r )\u90fd\u4e3a\u975e\u5355\u8bcd\u5b57\u7b26\u3002\n\n\n\\s\uff1a \u5339\u914d\u7a7a\u767d\u5b57\u7b26\u3002\u6bd4\u5982' ', \\t, \\n, \\r\u90fd\u5c5e\u4e8e\u7a7a\u767d\u5b57\u7b26\n\n\n\\S: \u5339\u914d\u975e\u7a7a\u767d\u5b57\u7b26\u3002\n\n\n.: \u5339\u914d\u9664\u6362\u884c\u7b26\\n\u4e4b\u5916\u5176\u4ed6\u6240\u6709\u5b57\u7b26\n\n\n\n\n\u6f14\u793a-1\uff1a\u5339\u914d\u5355\u8bcd\u5b57\u7b26\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python34\n\\n\nphp'\n\n\n# \u5339\u914d\u5355\u8bcd\u5b57\u7b26\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'\\w'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['p', 'y', 't', 'h', 'o', 'n', '3', '4', 'p', 'h', 'p']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python\n\\t\n34\n\\n\nphp '\n\n\n# \u5339\u914d\u7a7a\u767d\u5b57\u7b26\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'\\s'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['\\t', '\\n', ' ']\n\n\n\n\n\n\n\u6570\u91cf\u8bcd(\u5355\u4e2a\u5b57\u7b26\u51fa\u73b0\u7684\u6570\u91cf)\n#\n\n\n\n\n{\u6570\u91cf, \u6570\u91cf, ...}\uff1a \u5339\u914d{}\u524d\u5355\u4e2a\u5b57\u7b26\u7684\u6570\u91cf.\n\u6ce8\u610f\uff1a\u5728{}\u53ef\u4ee5\u5339\u914d\u591a\u4e2a\u6570\u91cf\u3002\u6bd4\u5982\uff1a{3\uff0c6}:\u8868\u793a\u5339\u914d\u5b57\u7b26\u7684\u4e2a\u6570\u4e3a3\u6216\u80056.\n\n\n\n\n\u6f14\u793a\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python\n\\t\n34\n\\n\nphp '\n\n\n# \u5339\u914d\u5b57\u7b26\u7684\u6570\u91cf\u4e3a3\u4e2a\u6216\u80056\u4e2a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'[a-z]{3,6}'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'php']\n\n\n\n\n\n\n\u6570\u91cf\u8bcd\u7684\u8d2a\u5a6a\u4e0e\u975e\u8d2a\u5a6a\n#\n\n\n\n\n\u8d2a\u5a6a\uff1a\u6839\u636e\u6307\u5b9a\u7684\u6570\u91cf\u8bcd\u4e2d\u7684\u4e2d\u6700\u5927\u6570\u91cf\u8bcd\u5339\u914d\u3002\n\n\n\n\npython \u4e2d\u7684\u6b63\u5219\u8868\u8fbe\u5f0f\u9ed8\u8ba4\u4e3a\u8d2a\u5a6a\u3002\n\n\n\n\n\u975e\u8d2a\u5a6a\uff1a\u5728\u6570\u91cf\u8bcd\u4e2d\u5339\u914d\u6700\u5c0f\u7684\u6570\u91cf\uff0c\u5339\u914d\u4e0a\uff0c\u5c31\u4e0d\u5728\u5339\u914d\u3002\n\n\n\n\n\u975e\u8d2a\u5a6a\u7684\u8868\u793a\u65b9\u5f0f\uff1a \u5728\u6570\u91cf\u8bcd\u8868\u793a\u5f0f{}\u540e\u9762\u52a0\u4e0a\uff1f\u3002\u5982\uff1a{}\uff1f\n\n\n\n\n\n\n\u6f14\u793a-1\uff1a\u8d2a\u5a6a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python\n\\t\n34\n\\n\nphp '\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'[a-z]{3,6}'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'php']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\u975e\u8d2a\u5a6a\n\n\ns\n \n=\n \n'python\n\\t\n34\n\\n\nphp '\n\n\n# \u975e\u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'[a-z]{3,6}?'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['pyt', 'hon', 'php']\n\n\n\n\n\n\n\u5339\u914d\u6b21\u6570\n#\n\n\n\n\n'*' \uff1a\u5339\u914d0\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21\n\n\n\n\n\u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76840\u6b21\u6216\u8005\u591a\u6b21\n\n\n\n\n'+' \uff1a\u5339\u914d1\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21\n\n\n\n\n\u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76841\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21\n\n\n\n\n'?'\uff1a\u5339\u914d0\u6b21\u6216\u80051\u6b21\n\n\n\n\n\u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76840\u6b21\u6216\u80051\u6b21\n\n\n\n\n\n\n\u6f14\u793a-1\uff1a'*' \uff1a\u5339\u914d0\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pytho\n\\t\n34\n\\n\npython\n\\n\npythonnn '\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'python*'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['pytho', 'python', 'pythonnn']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\u5339\u914d1\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pytho\n\\t\n34\n\\n\npython\n\\n\npythonnn '\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'python+'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'pythonnn']\n\n\n\n\n\n\n\u6f14\u793a-3\uff1a'?'\uff1a\u5339\u914d0\u6b21\u6216\u80051\u6b21\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pytho\n\\t\n34\n\\n\npython\n\\n\npythonnn '\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'python?'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['pytho', 'python', 'python']\n\n\n\n\n\n\n\u8fb9\u754c\u5339\u914d\n#\n\n\n\u8fb9\u754c\u5339\u914d\uff0c\u8fd9\u91cc\u4f7f\u7528^ \u548c $\u5b57\u7b26\u8868\u793a\u3002\n\n\n\n\n^ \uff1a \u4ece\u5b57\u7b26\u4e32\u7684\u5f00\u59cb\u5339\u914d\n\n\n$ \uff1a \u4ece\u5b57\u7b26\u4e32\u7684\u672b\u5c3e\u5f00\u59cb\u5339\u914d\n\n\n^\u6b63\u5219\u8868\u8fbe\u5f0f$\uff1a\u5b8c\u5168\u5339\u914d\u6b63\u5219\u8868\u8fbe\u5f0f\u4e2d\u5b57\u7b26\u3002\n\n\n\n\n\u6f14\u793a-1\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'1000000'\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'^1000$'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a[]\n\n\n\n\n\n\n\u5339\u914d\u5b57\u7b26\u7ec4\n#\n\n\n\u5b57\u7b26\u7ec4\uff1a\u4f7f\u7528()\u5c06\u5339\u914d\u7684\u5b57\u7b26\u62ec\u8d77\u6765\u3002\u5c31\u6210\u4e3a\u5b57\u7b26\u7ec4\n\n\n\u4f8b\u5982: (python){3}\u8868\u8fbe\u5f0f\uff1a\u4ee5python\u4e3a\u4e00\u7ec4\uff0c\u5728\u6570\u91cf\u8bcd{3}\u524d\uff0c\u4ee5python\u4e3a\u4e00\u7ec4\uff0c\u51fa\u73b0\u4e09\u6b21\uff0c\u6ee1\u8db3\u6761\u4ef6\uff0c\u5c06\u63d0\u53d6\u51fapython\u3002\n\n\n\u6f14\u793a\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pythonpython, java, python'\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'(python){2}'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['python']\n\n\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'(python){3}'\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a[]\n\n\n\n\n\n\n\u5339\u914d\u6a21\u5f0f(re.I \u548c re.S)\n#\n\n\n\n\nre.I: \u8ba9\u6b63\u5219\u8868\u8fbe\u5f0f\uff0c\u5728\u5339\u914d\u65f6\uff0c\u5ffd\u7565\u5927\u5c0f\u5199\u3002\nre.S: \u6539\u53d8 (.)\u7684\u884c\u4e3a\uff0c\u8ba9\u6b63\u5219\u8868\u8fbe\u5f0f\u80fd\u591f\u5339\u914d\u5230\\n\u3002\n\n\n\n\n\u6f14\u793a-1\uff1are.I\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python, C#, python'\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'c#'\n,\n \ns\n,\n \nre\n.\nI\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['C#']\n\n\n\n\n\n\n\u6f14\u793a-2\uff1are.S\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pythonC#\n\\n\npython'\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nfindall\n(\n'c#.{1}'\n,\n \ns\n,\n \nre\n.\nI\n|\nre\n.\nS\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1a['C#\\n']\n\n\n\n\n\n\n\u6b63\u5219\u66ff\u6362(re.sub)\n#\n\n\nsub(pattern, repl, string, count=0, flags=0):\n\u53c2\u6570\u8bf4\u660e\uff1a\n\n\n\n\npattern:\u5339\u914d\u7684\u6b63\u5219\u8868\u8fbe\u5f0f\n\n\nrepl:\u66ff\u6362\u7684\u5b57\u7b26\u6216\u8005\u7684\u51fd\u6570\u8868\u8fbe\u5f0f\n\n\nstring:\u539f\u59cb\u5b57\u7b26\u4e32\n\n\ncount:\u66ff\u6362\u7684\u4e2a\u6570\n\n\nflags:\u5339\u914d\u6a21\u5f0f\n\n\n\n\n\u6f14\u793a-1\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pythonC#python'\n\n\n# \u8d2a\u5a6a\n\n\nr\n \n=\n \nre\n.\nsub\n(\n'C#'\n,\n' go '\n,\n \ns\n)\n\n\nprint\n(\nr\n)\n\n\n#\u8f93\u51fa\u7ed3\u679c\uff1apython go python\n\n\n\n\n\n\n\u6f14\u793a-2\uff1a\u901a\u8fc7\u51fd\u6570\u66ff\u6362\u5185\u5bb9\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'pythonC#python'\n\n\n\ndef\n \nconvert\n(\nvalue\n):\n\n    \nmatched\n \n=\n \nvalue\n.\ngroup\n()\n\n    \nreturn\n \n' '\n \n+\n \nmatched\n \n+\n \n' '\n\n\n\n\nr\n \n=\n \nre\n.\nsub\n(\n'C#'\n,\n \nconvert\n,\n \ns\n)\n\n\n\nprint\n(\nr\n)\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1apython go python\n\n\n\n\n\n\nre.match\u548cre.search \u51fd\u6570\n#\n\n\n\n\nre.match:\u4ece\u5b57\u7b26\u4e32\u9996\u5b57\u6bcd\uff0c\u5f00\u59cb\u8fdb\u884c\u5339\u914d\u3002\u5339\u914d\u6210\u529f\uff0c\u8fd4\u56de\u5339\u914d\u7ed3\u679c\uff0c\u5931\u8d25\u8fd4\u56deNone\n\n\nre.search:\u641c\u7d22\u8981\u5339\u914d\u7684\u5b57\u7b26\u4e32\uff0c\u76f4\u5230\u5339\u914d\u5230\u5b57\u7b26\uff0c\u5e76\u8fd4\u56de\u5339\u914d\u7ed3\u679c\u3002\n\n\n\n\n\u6ce8\u610f\uff1a\n\n\n\n\n\u4ee5\u4e0a\u4e24\u4e2a\u65b9\u6cd5\uff0c\u8fd4\u56de\u7684\u7ed3\u679c\u662f\u4e00\u4e2a\u5bf9\u8c61\u3002\u5e76\u4e0d\u662f\u5c06\u5339\u914d\u7684\u7ed3\u679c\u5b57\u7b26\u8fd4\u56de\u3002\n\n\n\u5982\u679c\u5339\u914d\u6210\u529f\uff0c\u7acb\u523b\u505c\u6b62\u641c\u7d22\uff0c\u4e0d\u518d\u5f80\u540e\u5339\u914d\u3002\n\n\n\n\n\u6f14\u793a-1\uff1a\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python123python'\n\n\n\nr\n \n=\n \nre\n.\nmatch\n(\n'\\d'\n,\n \ns\n)\n\n\nr1\n \n=\n \nre\n.\nsearch\n(\n'\\d'\n,\n \ns\n)\n\n\n\nprint\n(\nr\n)\n\n\nprint\n(\nr1\n)\n\n\nprint\n(\nr1\n.\ngroup\n())\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a\n\n\n# None\n\n\n# <_sre.SRE_Match object; span=(6, 7), match='1'>\n\n\n# 1\n\n\n\n\n\n\n\u5206\u7ec4\u7684\u5339\u914d\n#\n\n\nimport\n \nre\n\n\n\ns\n \n=\n \n'python left is all java'\n\n\n\nr1\n \n=\n \nre\n.\nsearch\n(\n'python(.*)java'\n,\n \ns\n)\n\n\n\nprint\n(\nr1\n)\n\n\nprint\n(\nr1\n.\ngroup\n(\n0\n))\n\n\nprint\n(\nr1\n.\ngroup\n(\n1\n))\n\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a\n\n\n# <_sre.SRE_Match object; span=(0, 23), match='python left is all java'>\n\n\n# python left is all java\n\n\n#  left is all",
+            "title": "re\u6a21\u5757"
+        },
+        {
+            "location": "/re/1/#_1",
+            "text": "",
+            "title": "\u5143\u5b57\u7b26\u548c\u666e\u901a\u5b57\u7b26"
+        },
+        {
+            "location": "/re/1/#_2",
+            "text": "\\d: \u5339\u914d\u6570\u5b57  \\D: \u5339\u914d\u975e\u6570\u5b57   \u6f14\u793a-1\uff1a  import   re  s   =   'java4c#34python55javacript9'  # \u5339\u914d\u5b57\u7b26\u4e32\u4e2d\u6570\u5b57  r   =   re . findall ( '\\d' ,   s )  print ( r )  # \u8f93\u51fa\u7ed3\u679c:['4', '3', '4', '5', '5', '9']   \u6f14\u793a-2\uff1a  import   re  s   =   '34JAVA45423'  # \u5339\u914d\u5b57\u7b26\u4e32\u4e2d\u975e\u6570\u5b57  r   =   re . findall ( '\\D' ,   s )  print ( r )  # \u8f93\u51fa\u7ed3\u679c:['J', 'A', 'V', 'A']",
+            "title": "\u5143\u5b57\u7b26"
+        },
+        {
+            "location": "/re/1/#_3",
+            "text": "[\u5b57\u7b26]:\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\uff0c\u8868\u793a\u6216\u5173\u7cfb\u3002  [\u5b57\u7b26-\u5b57\u7b26]:\u5339\u914d\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\u5230\u5b57\u7b26\u7684\u5b57\u7b26\uff0c\u8868\u793a\u6216\u5173\u7cfb\u3002  [^\u5b57\u7b26]: \u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26\uff0c\u5bf9\u5339\u914d\u7684\u5b57\u7b26\u53d6\u53cd\u3002   \u6f14\u793a-1\uff1a\u5339\u914d\u5b57\u7b26\u4e2d\uff0cac\u4e2d\u95f4\u5305\u542bd\u6216f\u7684\u5b57\u7b26     import   re \n\n   s   =   'abc, adc, aec, afc, ahc' \n   # \u5339\u914d\u5b57\u7b26\u4e2d\uff0cac\u4e2d\u95f4\u5305\u542bd\u6216f\u7684\u5b57\u7b26 \n   r   =   re . findall ( 'a[df]c' ,   s ) \n   print ( r ) \n   #\u8f93\u51fa\u7ed3\u679c\uff1a['adc', 'afc']   \u6f14\u793a-2\uff1a\u5339\u914d\uff0c\u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26  import   re  s   =   'abc, adc, aec, afc, ahc'  # \u5339\u914d\uff0c\u4e0d\u5305\u542b\u51fa\u73b0\u5728[]\u62ec\u53f7\u4e4b\u95f4\u7684\u5b57\u7b26  r   =   re . findall ( 'a[^df]c' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['abc', 'aec', 'ahc']   \u6f14\u793a-3\uff1a\u5339\u914d\u5b57\u7b26c\u5230f\u4e4b\u95f4\u7684\u5b57\u7b26  import   re  s   =   'abc, acc, adc, aec, afc, ahc'  # \u5339\u914dc-f\u4e4b\u95f4\u7684\u5b57\u7b26  r   =   re . findall ( 'a[c-f]c' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['acc', 'adc', 'aec', 'afc']",
+            "title": "\u5b57\u7b26\u96c6"
+        },
+        {
+            "location": "/re/1/#_4",
+            "text": "\\d: \u5339\u914d0-9\u7684\u6570\u5b57\u3002\u628a[0-9]\u7684\u8868\u8fbe\u5f0f\u6982\u62ec\u6210\u4e86: \\d  \\w: \u5339\u914d\u5355\u8bcd\u5b57\u7b26\u3002\u628a [A-Za-z0-9_]\u7684\u8868\u793a\u5f0f\u6982\u62ec\u4e86: \\w  \\W: \u5339\u914d\u975e\u5355\u8bcd\u5b57\u7b26\u3002 \u6ce8\u610f\uff1a(' ', \\t, &, \\n, \\r )\u90fd\u4e3a\u975e\u5355\u8bcd\u5b57\u7b26\u3002  \\s\uff1a \u5339\u914d\u7a7a\u767d\u5b57\u7b26\u3002\u6bd4\u5982' ', \\t, \\n, \\r\u90fd\u5c5e\u4e8e\u7a7a\u767d\u5b57\u7b26  \\S: \u5339\u914d\u975e\u7a7a\u767d\u5b57\u7b26\u3002  .: \u5339\u914d\u9664\u6362\u884c\u7b26\\n\u4e4b\u5916\u5176\u4ed6\u6240\u6709\u5b57\u7b26   \u6f14\u793a-1\uff1a\u5339\u914d\u5355\u8bcd\u5b57\u7b26  import   re  s   =   'python34 \\n php'  # \u5339\u914d\u5355\u8bcd\u5b57\u7b26  r   =   re . findall ( '\\w' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['p', 'y', 't', 'h', 'o', 'n', '3', '4', 'p', 'h', 'p']   \u6f14\u793a-2\uff1a  import   re  s   =   'python \\t 34 \\n php '  # \u5339\u914d\u7a7a\u767d\u5b57\u7b26  r   =   re . findall ( '\\s' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['\\t', '\\n', ' ']",
+            "title": "\u6982\u62ec\u5b57\u7b26\u96c6"
+        },
+        {
+            "location": "/re/1/#_5",
+            "text": "{\u6570\u91cf, \u6570\u91cf, ...}\uff1a \u5339\u914d{}\u524d\u5355\u4e2a\u5b57\u7b26\u7684\u6570\u91cf.\n\u6ce8\u610f\uff1a\u5728{}\u53ef\u4ee5\u5339\u914d\u591a\u4e2a\u6570\u91cf\u3002\u6bd4\u5982\uff1a{3\uff0c6}:\u8868\u793a\u5339\u914d\u5b57\u7b26\u7684\u4e2a\u6570\u4e3a3\u6216\u80056.   \u6f14\u793a\uff1a  import   re  s   =   'python \\t 34 \\n php '  # \u5339\u914d\u5b57\u7b26\u7684\u6570\u91cf\u4e3a3\u4e2a\u6216\u80056\u4e2a  r   =   re . findall ( '[a-z]{3,6}' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'php']",
+            "title": "\u6570\u91cf\u8bcd(\u5355\u4e2a\u5b57\u7b26\u51fa\u73b0\u7684\u6570\u91cf)"
+        },
+        {
+            "location": "/re/1/#_6",
+            "text": "\u8d2a\u5a6a\uff1a\u6839\u636e\u6307\u5b9a\u7684\u6570\u91cf\u8bcd\u4e2d\u7684\u4e2d\u6700\u5927\u6570\u91cf\u8bcd\u5339\u914d\u3002   python \u4e2d\u7684\u6b63\u5219\u8868\u8fbe\u5f0f\u9ed8\u8ba4\u4e3a\u8d2a\u5a6a\u3002   \u975e\u8d2a\u5a6a\uff1a\u5728\u6570\u91cf\u8bcd\u4e2d\u5339\u914d\u6700\u5c0f\u7684\u6570\u91cf\uff0c\u5339\u914d\u4e0a\uff0c\u5c31\u4e0d\u5728\u5339\u914d\u3002   \u975e\u8d2a\u5a6a\u7684\u8868\u793a\u65b9\u5f0f\uff1a \u5728\u6570\u91cf\u8bcd\u8868\u793a\u5f0f{}\u540e\u9762\u52a0\u4e0a\uff1f\u3002\u5982\uff1a{}\uff1f    \u6f14\u793a-1\uff1a\u8d2a\u5a6a  import   re  s   =   'python \\t 34 \\n php '  # \u8d2a\u5a6a  r   =   re . findall ( '[a-z]{3,6}' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'php']   \u6f14\u793a-2\uff1a\u975e\u8d2a\u5a6a  s   =   'python \\t 34 \\n php '  # \u975e\u8d2a\u5a6a  r   =   re . findall ( '[a-z]{3,6}?' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['pyt', 'hon', 'php']",
+            "title": "\u6570\u91cf\u8bcd\u7684\u8d2a\u5a6a\u4e0e\u975e\u8d2a\u5a6a"
+        },
+        {
+            "location": "/re/1/#_7",
+            "text": "'*' \uff1a\u5339\u914d0\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21   \u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76840\u6b21\u6216\u8005\u591a\u6b21   '+' \uff1a\u5339\u914d1\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21   \u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76841\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21   '?'\uff1a\u5339\u914d0\u6b21\u6216\u80051\u6b21   \u5339\u914d\u89c4\u5219\uff1a \u5339\u914d*\u524d\u9762\u7684\u7b2c\u4e00\u4e2a\u5b57\u7b26\u51fa\u73b0\u76840\u6b21\u6216\u80051\u6b21    \u6f14\u793a-1\uff1a'*' \uff1a\u5339\u914d0\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21  import   re  s   =   'pytho \\t 34 \\n python \\n pythonnn '  # \u8d2a\u5a6a  r   =   re . findall ( 'python*' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['pytho', 'python', 'pythonnn']   \u6f14\u793a-2\uff1a\u5339\u914d1\u6b21\u6216\u8005\u65e0\u9650\u591a\u6b21  import   re  s   =   'pytho \\t 34 \\n python \\n pythonnn '  # \u8d2a\u5a6a  r   =   re . findall ( 'python+' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['python', 'pythonnn']   \u6f14\u793a-3\uff1a'?'\uff1a\u5339\u914d0\u6b21\u6216\u80051\u6b21  import   re  s   =   'pytho \\t 34 \\n python \\n pythonnn '  # \u8d2a\u5a6a  r   =   re . findall ( 'python?' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['pytho', 'python', 'python']",
+            "title": "\u5339\u914d\u6b21\u6570"
+        },
+        {
+            "location": "/re/1/#_8",
+            "text": "\u8fb9\u754c\u5339\u914d\uff0c\u8fd9\u91cc\u4f7f\u7528^ \u548c $\u5b57\u7b26\u8868\u793a\u3002   ^ \uff1a \u4ece\u5b57\u7b26\u4e32\u7684\u5f00\u59cb\u5339\u914d  $ \uff1a \u4ece\u5b57\u7b26\u4e32\u7684\u672b\u5c3e\u5f00\u59cb\u5339\u914d  ^\u6b63\u5219\u8868\u8fbe\u5f0f$\uff1a\u5b8c\u5168\u5339\u914d\u6b63\u5219\u8868\u8fbe\u5f0f\u4e2d\u5b57\u7b26\u3002   \u6f14\u793a-1\uff1a  import   re  s   =   '1000000'  # \u8d2a\u5a6a  r   =   re . findall ( '^1000$' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a[]",
+            "title": "\u8fb9\u754c\u5339\u914d"
+        },
+        {
+            "location": "/re/1/#_9",
+            "text": "\u5b57\u7b26\u7ec4\uff1a\u4f7f\u7528()\u5c06\u5339\u914d\u7684\u5b57\u7b26\u62ec\u8d77\u6765\u3002\u5c31\u6210\u4e3a\u5b57\u7b26\u7ec4  \u4f8b\u5982: (python){3}\u8868\u8fbe\u5f0f\uff1a\u4ee5python\u4e3a\u4e00\u7ec4\uff0c\u5728\u6570\u91cf\u8bcd{3}\u524d\uff0c\u4ee5python\u4e3a\u4e00\u7ec4\uff0c\u51fa\u73b0\u4e09\u6b21\uff0c\u6ee1\u8db3\u6761\u4ef6\uff0c\u5c06\u63d0\u53d6\u51fapython\u3002  \u6f14\u793a\uff1a  import   re  s   =   'pythonpython, java, python'  # \u8d2a\u5a6a  r   =   re . findall ( '(python){2}' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['python']  # \u8d2a\u5a6a  r   =   re . findall ( '(python){3}' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a[]",
+            "title": "\u5339\u914d\u5b57\u7b26\u7ec4"
+        },
+        {
+            "location": "/re/1/#rei-res",
+            "text": "re.I: \u8ba9\u6b63\u5219\u8868\u8fbe\u5f0f\uff0c\u5728\u5339\u914d\u65f6\uff0c\u5ffd\u7565\u5927\u5c0f\u5199\u3002\nre.S: \u6539\u53d8 (.)\u7684\u884c\u4e3a\uff0c\u8ba9\u6b63\u5219\u8868\u8fbe\u5f0f\u80fd\u591f\u5339\u914d\u5230\\n\u3002   \u6f14\u793a-1\uff1are.I  import   re  s   =   'python, C#, python'  # \u8d2a\u5a6a  r   =   re . findall ( 'c#' ,   s ,   re . I )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['C#']   \u6f14\u793a-2\uff1are.S  import   re  s   =   'pythonC# \\n python'  # \u8d2a\u5a6a  r   =   re . findall ( 'c#.{1}' ,   s ,   re . I | re . S )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1a['C#\\n']",
+            "title": "\u5339\u914d\u6a21\u5f0f(re.I \u548c re.S)"
+        },
+        {
+            "location": "/re/1/#resub",
+            "text": "sub(pattern, repl, string, count=0, flags=0):\n\u53c2\u6570\u8bf4\u660e\uff1a   pattern:\u5339\u914d\u7684\u6b63\u5219\u8868\u8fbe\u5f0f  repl:\u66ff\u6362\u7684\u5b57\u7b26\u6216\u8005\u7684\u51fd\u6570\u8868\u8fbe\u5f0f  string:\u539f\u59cb\u5b57\u7b26\u4e32  count:\u66ff\u6362\u7684\u4e2a\u6570  flags:\u5339\u914d\u6a21\u5f0f   \u6f14\u793a-1\uff1a  import   re  s   =   'pythonC#python'  # \u8d2a\u5a6a  r   =   re . sub ( 'C#' , ' go ' ,   s )  print ( r )  #\u8f93\u51fa\u7ed3\u679c\uff1apython go python   \u6f14\u793a-2\uff1a\u901a\u8fc7\u51fd\u6570\u66ff\u6362\u5185\u5bb9  import   re  s   =   'pythonC#python'  def   convert ( value ): \n     matched   =   value . group () \n     return   ' '   +   matched   +   ' '  r   =   re . sub ( 'C#' ,   convert ,   s )  print ( r )  # \u8f93\u51fa\u7ed3\u679c\uff1apython go python",
+            "title": "\u6b63\u5219\u66ff\u6362(re.sub)"
+        },
+        {
+            "location": "/re/1/#rematchresearch",
+            "text": "re.match:\u4ece\u5b57\u7b26\u4e32\u9996\u5b57\u6bcd\uff0c\u5f00\u59cb\u8fdb\u884c\u5339\u914d\u3002\u5339\u914d\u6210\u529f\uff0c\u8fd4\u56de\u5339\u914d\u7ed3\u679c\uff0c\u5931\u8d25\u8fd4\u56deNone  re.search:\u641c\u7d22\u8981\u5339\u914d\u7684\u5b57\u7b26\u4e32\uff0c\u76f4\u5230\u5339\u914d\u5230\u5b57\u7b26\uff0c\u5e76\u8fd4\u56de\u5339\u914d\u7ed3\u679c\u3002   \u6ce8\u610f\uff1a   \u4ee5\u4e0a\u4e24\u4e2a\u65b9\u6cd5\uff0c\u8fd4\u56de\u7684\u7ed3\u679c\u662f\u4e00\u4e2a\u5bf9\u8c61\u3002\u5e76\u4e0d\u662f\u5c06\u5339\u914d\u7684\u7ed3\u679c\u5b57\u7b26\u8fd4\u56de\u3002  \u5982\u679c\u5339\u914d\u6210\u529f\uff0c\u7acb\u523b\u505c\u6b62\u641c\u7d22\uff0c\u4e0d\u518d\u5f80\u540e\u5339\u914d\u3002   \u6f14\u793a-1\uff1a  import   re  s   =   'python123python'  r   =   re . match ( '\\d' ,   s )  r1   =   re . search ( '\\d' ,   s )  print ( r )  print ( r1 )  print ( r1 . group ())  # \u8f93\u51fa\u7ed3\u679c\uff1a  # None  # <_sre.SRE_Match object; span=(6, 7), match='1'>  # 1",
+            "title": "re.match\u548cre.search \u51fd\u6570"
+        },
+        {
+            "location": "/re/1/#_10",
+            "text": "import   re  s   =   'python left is all java'  r1   =   re . search ( 'python(.*)java' ,   s )  print ( r1 )  print ( r1 . group ( 0 ))  print ( r1 . group ( 1 ))  # \u8f93\u51fa\u7ed3\u679c\uff1a  # <_sre.SRE_Match object; span=(0, 23), match='python left is all java'>  # python left is all java  #  left is all",
+            "title": "\u5206\u7ec4\u7684\u5339\u914d"
+        },
+        {
+            "location": "/enum/1/",
+            "text": "\u5b9a\u4e49\u679a\u4e3e\u7c7b\n#\n\n\n\u679a\u4e3e\u7c7b\u578b\u7684\u7279\u70b9\uff1a\u5b9a\u4e49\u7684\u7c7b\u578b\u662f\u65e0\u6cd5\u66f4\u6539\uff0c\u53ef\u4ee5\u9632\u6b62\u76f8\u540c\u6807\u7b7e\u7684\u529f\u80fd\u3002\n\n\nfrom\n \nenum\n \nimport\n \nEnum\n\n\n\nclass\n \nVIP\n(\nEnum\n):\n\n    \nYELLOW\n \n=\n \n1\n\n    \nGREEN\n \n=\n \n2\n\n    \nBLACK\n \n=\n \n3\n\n    \nRED\n \n=\n \n4\n\n\n\nprint\n(\nVIP\n.\nYELLOW\n)\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a VIP.YELLOW\n\n\n\n\n\n\n\u679a\u4e3e\u540d\u79f0,\u679a\u4e3e\u503c\n#\n\n\nfrom\n \nenum\n \nimport\n \nEnum\n\n\n\nclass\n \nVIP\n(\nEnum\n):\n\n    \nYELLOW\n \n=\n \n1\n\n    \nGREEN\n \n=\n \n2\n\n    \nBLACK\n \n=\n \n3\n\n    \nRED\n \n=\n \n4\n\n\n\n\nprint\n(\nVIP\n.\nYELLOW\n)\n \n# \u679a\u4e3e\u7c7b\u578b\n\n\nprint\n(\nVIP\n.\nYELLOW\n.\nname\n)\n \n# \u679a\u4e3e\u6807\u7b7e\u7684\u540d\u79f0\n\n\nprint\n(\nVIP\n.\nYELLOW\n.\nvalue\n)\n \n# \u679a\u4e3e\u6807\u7b7e\u7684\u503c\n\n\n\n# \u8f93\u51fa\u7ed3\u679c:\n\n\n# VIP.YELLOW\n\n\n# YELLOW\n\n\n# 1\n\n\n\n\n\n\n\u679a\u4e3e\u7684\u6bd4\u8f83\u8fd0\u7b97\n#\n\n\n\u679a\u4e3e\u6bd4\u8f83\u8fd0\u7b97\u7684\u7279\u70b9\uff1a\n\n\n\n\n\u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u53ef\u4ee5\u8fdb\u884c\u7b49\u503c(\n==\n)\u6bd4\u8f83\n\n\n\u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u53ef\u4ee5\u4f7f\u7528 \nis\n \u5173\u952e\u5b57\u8fdb\u884c\u6bd4\u8f83\n\n\n\u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u4e0d\u53ef\u4ee5\u8fdb\u884c\u5927\u5c0f\u6bd4\u8f83\n\n\n\n\n\u6f14\u793a\uff1a\n\n\nfrom\n \nenum\n \nimport\n \nEnum\n\n\n\nclass\n \nVIP\n(\nEnum\n):\n\n    \nYELLOW\n \n=\n \n1\n\n    \nGREEN\n \n=\n \n2\n\n    \nBLACK\n \n=\n \n3\n\n    \nRED\n \n=\n \n4\n\n\n\n\nprint\n(\nVIP\n.\nYELLOW\n \n==\n \nVIP\n.\nRED\n)\n\n\nprint\n(\nVIP\n.\nYELLOW\n \nis\n \nVIP\n.\nRED\n)\n\n\nprint\n(\nVIP\n.\nYELLOW\n \nis\n \nVIP\n.\nYELLOW\n)\n\n\n\n# \u8f93\u51fa\u7ed3\u679c:\n\n\n# False\n\n\n# False\n\n\n# True\n\n\n\n\n\n\n\u679a\u4e3e\u8f6c\u6362\n#\n\n\nfrom\n \nenum\n \nimport\n \nEnum\n\n\n\nclass\n \nVIP\n(\nEnum\n):\n\n    \nYELLOW\n \n=\n \n1\n\n    \nGREEN\n \n=\n \n'2'\n\n    \nBLACK\n \n=\n \n3\n\n    \nRED\n \n=\n \n4\n\n\n\n\na\n \n=\n \n1\n\n\n# \u5c061\uff0c\u8f6c\u5316\u4e3a\u679a\u4e3e\u7c7b\u578b\n\n\nprint\n(\nVIP\n(\na\n))\n\n\n\nb\n \n=\n \n'2'\n\n\nprint\n(\nVIP\n(\nb\n))\n\n\n\n\n# \u8f93\u51fa\u7ed3\u679c:\n\n\n# VIP.YELLOW\n\n\n# VIP.GREEN\n\n\n\n\n\n\nIntEnum \u548c unique\n#\n\n\nIntEnum: \u6574\u578b\u679a\u4e3e\u7c7b\u578b\n\n\nunique: \u88c5\u9970\u5668\uff0c\u5b9a\u4e49\u7684\u679a\u4e3e\u7c7b\u578b\u7684\u503c\u5fc5\u987b\u662f\u552f\u4e00\u7684\u3002\n\n\n\u6f14\u793a\uff1a\n\n\nfrom\n \nenum\n \nimport\n \nIntEnum\n,\n \nunique\n\n\n\n@unique\n\n\nclass\n \nVIP\n(\nIntEnum\n):\n\n    \nYELLOW\n \n=\n \n1\n\n    \nGREEN\n \n=\n \n2\n\n    \nBLACK\n \n=\n \n3\n\n    \nRED\n \n=\n \n4\n\n\n\n\n\n\n#",
+            "title": "\u679a\u4e3e\u7c7b\u578b"
+        },
+        {
+            "location": "/enum/1/#_1",
+            "text": "\u679a\u4e3e\u7c7b\u578b\u7684\u7279\u70b9\uff1a\u5b9a\u4e49\u7684\u7c7b\u578b\u662f\u65e0\u6cd5\u66f4\u6539\uff0c\u53ef\u4ee5\u9632\u6b62\u76f8\u540c\u6807\u7b7e\u7684\u529f\u80fd\u3002  from   enum   import   Enum  class   VIP ( Enum ): \n     YELLOW   =   1 \n     GREEN   =   2 \n     BLACK   =   3 \n     RED   =   4  print ( VIP . YELLOW )  # \u8f93\u51fa\u7ed3\u679c\uff1a VIP.YELLOW",
+            "title": "\u5b9a\u4e49\u679a\u4e3e\u7c7b"
+        },
+        {
+            "location": "/enum/1/#_2",
+            "text": "from   enum   import   Enum  class   VIP ( Enum ): \n     YELLOW   =   1 \n     GREEN   =   2 \n     BLACK   =   3 \n     RED   =   4  print ( VIP . YELLOW )   # \u679a\u4e3e\u7c7b\u578b  print ( VIP . YELLOW . name )   # \u679a\u4e3e\u6807\u7b7e\u7684\u540d\u79f0  print ( VIP . YELLOW . value )   # \u679a\u4e3e\u6807\u7b7e\u7684\u503c  # \u8f93\u51fa\u7ed3\u679c:  # VIP.YELLOW  # YELLOW  # 1",
+            "title": "\u679a\u4e3e\u540d\u79f0,\u679a\u4e3e\u503c"
+        },
+        {
+            "location": "/enum/1/#_3",
+            "text": "\u679a\u4e3e\u6bd4\u8f83\u8fd0\u7b97\u7684\u7279\u70b9\uff1a   \u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u53ef\u4ee5\u8fdb\u884c\u7b49\u503c( == )\u6bd4\u8f83  \u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u53ef\u4ee5\u4f7f\u7528  is  \u5173\u952e\u5b57\u8fdb\u884c\u6bd4\u8f83  \u4e24\u4e2a\u679a\u4e3e\u4e4b\u95f4\u4e0d\u53ef\u4ee5\u8fdb\u884c\u5927\u5c0f\u6bd4\u8f83   \u6f14\u793a\uff1a  from   enum   import   Enum  class   VIP ( Enum ): \n     YELLOW   =   1 \n     GREEN   =   2 \n     BLACK   =   3 \n     RED   =   4  print ( VIP . YELLOW   ==   VIP . RED )  print ( VIP . YELLOW   is   VIP . RED )  print ( VIP . YELLOW   is   VIP . YELLOW )  # \u8f93\u51fa\u7ed3\u679c:  # False  # False  # True",
+            "title": "\u679a\u4e3e\u7684\u6bd4\u8f83\u8fd0\u7b97"
+        },
+        {
+            "location": "/enum/1/#_4",
+            "text": "from   enum   import   Enum  class   VIP ( Enum ): \n     YELLOW   =   1 \n     GREEN   =   '2' \n     BLACK   =   3 \n     RED   =   4  a   =   1  # \u5c061\uff0c\u8f6c\u5316\u4e3a\u679a\u4e3e\u7c7b\u578b  print ( VIP ( a ))  b   =   '2'  print ( VIP ( b ))  # \u8f93\u51fa\u7ed3\u679c:  # VIP.YELLOW  # VIP.GREEN",
+            "title": "\u679a\u4e3e\u8f6c\u6362"
+        },
+        {
+            "location": "/enum/1/#intenum-unique",
+            "text": "IntEnum: \u6574\u578b\u679a\u4e3e\u7c7b\u578b  unique: \u88c5\u9970\u5668\uff0c\u5b9a\u4e49\u7684\u679a\u4e3e\u7c7b\u578b\u7684\u503c\u5fc5\u987b\u662f\u552f\u4e00\u7684\u3002  \u6f14\u793a\uff1a  from   enum   import   IntEnum ,   unique  @unique  class   VIP ( IntEnum ): \n     YELLOW   =   1 \n     GREEN   =   2 \n     BLACK   =   3 \n     RED   =   4",
+            "title": "IntEnum \u548c unique"
+        },
+        {
+            "location": "/func/1/",
+            "text": "\u95ed\u5305\n#\n\n\n\u5b9a\u4e49\uff1a\n\n\n  \u5728\u4e00\u4e2a\u5916\u51fd\u6570\u4e2d\u5b9a\u4e49\u4e86\u4e00\u4e2a\u5185\u51fd\u6570\uff0c\n  \u5185\u51fd\u6570\u91cc\u8fd0\u7528\u4e86\u5916\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf(\u73af\u5883\u53d8\u91cf\uff1a\u4f1a\u8bb0\u5f55\u4e0a\u6b21\u8c03\u7528\u7684\u72b6\u6001)\n  \u5e76\u4e14\u5916\u51fd\u6570\u7684\u8fd4\u56de\u503c\u662f\u5185\u51fd\u6570\u7684\u5f15\u7528\u3002\n\n\n\n\n\n\u6f14\u793a\uff1a\u6b63\u786e\u5b9a\u4e49\u95ed\u5305\n\n\ndef\n \nout\n():\n\n    \na\n \n=\n \n100\n\n\n    \ndef\n \ninner\n(\nx\n):\n\n        \nreturn\n \na\n \n*\n \nx\n \n*\n \nx\n\n\n    \nreturn\n \ninner\n\n\n\nf\n \n=\n \nout\n()\n\n\n\nprint\n(\nf\n(\n2\n))\n\n\nprint\n(\nf\n.\n__closure__\n)\n\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a\n\n\n# 400\n\n\n# (<cell at 0x104a133a8: int object at 0x1009e08e0>,)\n\n\n\n\n\n\n\u5b9a\u4e49\u95ed\u5305\u65f6\uff0c\u6ce8\u610f\u4e8b\u9879\uff1a\n\n\n  1. \u5185\u90e8\u51fd\u6570\u5fc5\u987b\u8981\u8fd0\u7528\u5916\u90e8\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf\n  2. \u5916\u90e8\u51fd\u6570\u5fc5\u987b\u8fd4\u56de\u5185\u90e8\u51fd\u6570\u7684\u5f15\u7528\n\n\n\n\n\n\u7b26\u5408\u4ee5\u4e0a\u89c4\u5219\uff0c\u624d\u662f\u95ed\u5305\u3002\u53cd\u4e4b\uff0c\u4e0d\u662f\u95ed\u5305\u3002\n\n\n\u6f14\u793a\uff1a\u4e0d\u662f\u95ed\u5305\u7684\u60c5\u51b5\n\n\ndef\n \nout\n():\n\n    \na\n \n=\n \n100\n\n\n    \ndef\n \ninner\n(\nx\n):\n\n        \na\n \n=\n \n200\n \n# \u5728\u5185\u90e8\u51fd\u6570\u4e2d\u8fd0\u7528\u4e86\u5c40\u90e8\u53d8\u91cfa\uff0c\u5e76\u6ca1\u6709\u4f7f\u7528\u5916\u90e8\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf\u3002\n\n        \nreturn\n \na\n \n*\n \nx\n \n*\n \nx\n\n\n    \nreturn\n \ninner\n\n\n\nf\n \n=\n \nout\n()\n\n\n\nprint\n(\nf\n(\n2\n))\n\n\nprint\n(\nf\n.\n__closure__\n)\n \n# \u4e0d\u662f\u95ed\u5305\uff0c\u56e0\u6b64\u8f93\u51fa\u4e3aNone\n\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a\n\n\n# 400\n\n\n# None\n\n\n\n\n\n\n\u4f7f\u7528nonlocal\u5173\u952e\u5b57\uff0c\u5c06\u5185\u90e8\u51fd\u6570\u7684\u5c40\u90e8\u53d8\u91cf\u6539\u4e3a\u5168\u5c40\u53d8\u91cf\n#\n\n\n\u6f14\u793a\uff1a\u5c06\u5185\u90e8\u51fd\u6570\u7684\u5c40\u90e8\u53d8\u91cf\u6539\u4e3a\u5168\u5c40\u53d8\u91cf\n\n\ndef\n \nout\n(\norigin\n):\n\n\n    \ndef\n \ninner\n(\npos\n):\n\n        \nnonlocal\n \norigin\n\n        \nnew_post\n \n=\n \norigin\n \n+\n \npos\n\n        \norigin\n \n=\n \nnew_post\n\n        \nreturn\n \nnew_post\n\n\n    \nreturn\n \ninner\n\n\n\nf\n \n=\n \nout\n(\n100\n)\n\n\n\nprint\n(\nf\n(\n2\n))\n\n\nprint\n(\nf\n(\n4\n))\n\n\nprint\n(\nf\n(\n6\n))\n\n\nprint\n(\nf\n.\n__closure__\n)\n\n\n\n# \u8f93\u51fa\u7ed3\u679c\uff1a\n\n\n# 102\n\n\n# 106\n\n\n# 112\n\n\n# (<cell at 0x103a133a8: int object at 0x1009e0a60>,)\n\n\n\n\n\n\n\u95ed\u5305\u7684\u7f3a\u9677\n#\n\n\n\n\n\u7531\u4e8e\u73af\u5883\u53d8\u91cf\u4f1a\u8bb0\u5f55\u4e0a\u6b21\u8c03\u7528\u7684\u72b6\u6001\uff0c\u6b64\u72b6\u6001\u4fdd\u5b58\u5230\u5185\u5b58\u4e2d\uff0c\u56e0\u6b64\u4f1a\u9020\u6210\u5185\u5b58\u6cc4\u6f0f\u3002",
+            "title": "\u95ed\u5305"
+        },
+        {
+            "location": "/func/1/#_1",
+            "text": "\u5b9a\u4e49\uff1a    \u5728\u4e00\u4e2a\u5916\u51fd\u6570\u4e2d\u5b9a\u4e49\u4e86\u4e00\u4e2a\u5185\u51fd\u6570\uff0c\n  \u5185\u51fd\u6570\u91cc\u8fd0\u7528\u4e86\u5916\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf(\u73af\u5883\u53d8\u91cf\uff1a\u4f1a\u8bb0\u5f55\u4e0a\u6b21\u8c03\u7528\u7684\u72b6\u6001)\n  \u5e76\u4e14\u5916\u51fd\u6570\u7684\u8fd4\u56de\u503c\u662f\u5185\u51fd\u6570\u7684\u5f15\u7528\u3002  \u6f14\u793a\uff1a\u6b63\u786e\u5b9a\u4e49\u95ed\u5305  def   out (): \n     a   =   100 \n\n     def   inner ( x ): \n         return   a   *   x   *   x \n\n     return   inner  f   =   out ()  print ( f ( 2 ))  print ( f . __closure__ )  # \u8f93\u51fa\u7ed3\u679c\uff1a  # 400  # (<cell at 0x104a133a8: int object at 0x1009e08e0>,)   \u5b9a\u4e49\u95ed\u5305\u65f6\uff0c\u6ce8\u610f\u4e8b\u9879\uff1a    1. \u5185\u90e8\u51fd\u6570\u5fc5\u987b\u8981\u8fd0\u7528\u5916\u90e8\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf\n  2. \u5916\u90e8\u51fd\u6570\u5fc5\u987b\u8fd4\u56de\u5185\u90e8\u51fd\u6570\u7684\u5f15\u7528  \u7b26\u5408\u4ee5\u4e0a\u89c4\u5219\uff0c\u624d\u662f\u95ed\u5305\u3002\u53cd\u4e4b\uff0c\u4e0d\u662f\u95ed\u5305\u3002  \u6f14\u793a\uff1a\u4e0d\u662f\u95ed\u5305\u7684\u60c5\u51b5  def   out (): \n     a   =   100 \n\n     def   inner ( x ): \n         a   =   200   # \u5728\u5185\u90e8\u51fd\u6570\u4e2d\u8fd0\u7528\u4e86\u5c40\u90e8\u53d8\u91cfa\uff0c\u5e76\u6ca1\u6709\u4f7f\u7528\u5916\u90e8\u51fd\u6570\u7684\u73af\u5883\u53d8\u91cf\u3002 \n         return   a   *   x   *   x \n\n     return   inner  f   =   out ()  print ( f ( 2 ))  print ( f . __closure__ )   # \u4e0d\u662f\u95ed\u5305\uff0c\u56e0\u6b64\u8f93\u51fa\u4e3aNone  # \u8f93\u51fa\u7ed3\u679c\uff1a  # 400  # None",
+            "title": "\u95ed\u5305"
+        },
+        {
+            "location": "/func/1/#nonlocal",
+            "text": "\u6f14\u793a\uff1a\u5c06\u5185\u90e8\u51fd\u6570\u7684\u5c40\u90e8\u53d8\u91cf\u6539\u4e3a\u5168\u5c40\u53d8\u91cf  def   out ( origin ): \n\n     def   inner ( pos ): \n         nonlocal   origin \n         new_post   =   origin   +   pos \n         origin   =   new_post \n         return   new_post \n\n     return   inner  f   =   out ( 100 )  print ( f ( 2 ))  print ( f ( 4 ))  print ( f ( 6 ))  print ( f . __closure__ )  # \u8f93\u51fa\u7ed3\u679c\uff1a  # 102  # 106  # 112  # (<cell at 0x103a133a8: int object at 0x1009e0a60>,)",
+            "title": "\u4f7f\u7528nonlocal\u5173\u952e\u5b57\uff0c\u5c06\u5185\u90e8\u51fd\u6570\u7684\u5c40\u90e8\u53d8\u91cf\u6539\u4e3a\u5168\u5c40\u53d8\u91cf"
+        },
+        {
+            "location": "/func/1/#_2",
+            "text": "\u7531\u4e8e\u73af\u5883\u53d8\u91cf\u4f1a\u8bb0\u5f55\u4e0a\u6b21\u8c03\u7528\u7684\u72b6\u6001\uff0c\u6b64\u72b6\u6001\u4fdd\u5b58\u5230\u5185\u5b58\u4e2d\uff0c\u56e0\u6b64\u4f1a\u9020\u6210\u5185\u5b58\u6cc4\u6f0f\u3002",
+            "title": "\u95ed\u5305\u7684\u7f3a\u9677"
+        },
+        {
+            "location": "/func/2/",
+            "text": "\u533f\u540d\u51fd\u6570\n#\n\n\nlambda\n:\u5173\u952e\u5b57\u5b9a\u4e49\u533f\u540d\u51fd\u6570\u3002\n\n\n\u6f14\u793a\uff1a\n\n\n# \u666e\u901a\u51fd\u6570\n\n\ndef\n \nadd\n(\nx\n,\n \ny\n):\n\n    \nreturn\n \nx\n \n+\n \ny\n;\n\n\n\n\nprint\n(\nadd\n(\n1\n,\n \n2\n))\n\n\n\n# \u533f\u540d\u51fd\u6570\n\n\nf\n \n=\n \nlambda\n \nx\n,\n \ny\n:\n \nx\n \n+\n \ny\n\n\n\nprint\n(\nf\n(\n1\n,\n \n2\n))",
+            "title": "\u533f\u540d\u51fd\u6570"
+        },
+        {
+            "location": "/func/2/#_1",
+            "text": "lambda :\u5173\u952e\u5b57\u5b9a\u4e49\u533f\u540d\u51fd\u6570\u3002  \u6f14\u793a\uff1a  # \u666e\u901a\u51fd\u6570  def   add ( x ,   y ): \n     return   x   +   y ;  print ( add ( 1 ,   2 ))  # \u533f\u540d\u51fd\u6570  f   =   lambda   x ,   y :   x   +   y  print ( f ( 1 ,   2 ))",
+            "title": "\u533f\u540d\u51fd\u6570"
+        },
+        {
+            "location": "/func/4/",
+            "text": "map\n#\n\n\nreduce\n#\n\n\nfilter\n#\n\n\nsorted\n#",
+            "title": "\u9ad8\u9636\u51fd\u6570"
+        },
+        {
+            "location": "/func/4/#map",
+            "text": "",
+            "title": "map"
+        },
+        {
+            "location": "/func/4/#reduce",
+            "text": "",
+            "title": "reduce"
+        },
+        {
+            "location": "/func/4/#filter",
+            "text": "",
+            "title": "filter"
+        },
+        {
+            "location": "/func/4/#sorted",
+            "text": "",
+            "title": "sorted"
+        },
+        {
+            "location": "/func/5/",
+            "text": "\u5b9a\u4e49\n#\n\n\n#",
+            "title": "\u88c5\u9970\u5668"
+        },
+        {
+            "location": "/func/5/#_1",
+            "text": "",
+            "title": "\u5b9a\u4e49"
+        },
+        {
+            "location": "/lib/1/",
+            "text": "",
+            "title": "collections"
+        },
+        {
+            "location": "/lib/2/",
+            "text": "",
+            "title": "datetime"
+        },
+        {
+            "location": "/lib/3/",
+            "text": "",
+            "title": "functools"
+        },
+        {
+            "location": "/lib/4/",
+            "text": "",
+            "title": "hashlib"
+        },
+        {
+            "location": "/lib/5/",
+            "text": "",
+            "title": "itertools"
+        },
+        {
+            "location": "/lib/6/",
+            "text": "",
+            "title": "operator"
+        },
+        {
+            "location": "/lib/7/",
+            "text": "",
+            "title": "os/sys"
+        },
+        {
+            "location": "/lib/8/",
+            "text": "",
+            "title": "operator"
+        },
+        {
+            "location": "/memory/1/",
+            "text": "",
+            "title": "\u5185\u5b58\u7ba1\u7406"
+        },
+        {
+            "location": "/pynic/3/",
+            "text": "\u4e09\u5143\u8868\u8fbe\u5f0f\n#\n\n\n\u683c\u5f0f\uff1a\n\n\n\u6761\u4ef6\u4e3a\u771f\u7684\u8fd4\u56de\u7ed3\u679c  if \u6761\u4ef6\u5224\u65ad  else  \u6761\u4ef6\u4e3a\u5047\u65f6\u7684\u8fd4\u56de\u7ed3\u679c\n\n\n\u6f14\u793a\uff1a\n\n\nx\n \n=\n \n1\n\n\ny\n \n=\n \n2\n\n\n\nr\n \n=\n \nx\n \nif\n \nx\n \n>\n \ny\n \nelse\n \ny\n\n\n\nprint\n(\nr\n)",
+            "title": "\u4e09\u5143\u8868\u8fbe\u5f0f"
+        },
+        {
+            "location": "/pynic/3/#_1",
+            "text": "\u683c\u5f0f\uff1a  \u6761\u4ef6\u4e3a\u771f\u7684\u8fd4\u56de\u7ed3\u679c  if \u6761\u4ef6\u5224\u65ad  else  \u6761\u4ef6\u4e3a\u5047\u65f6\u7684\u8fd4\u56de\u7ed3\u679c  \u6f14\u793a\uff1a  x   =   1  y   =   2  r   =   x   if   x   >   y   else   y  print ( r )",
+            "title": "\u4e09\u5143\u8868\u8fbe\u5f0f"
+        },
+        {
+            "location": "/pynic/1/",
+            "text": "\u7531\u4e8epython\u6ca1\u6709\u63d0\u4f9bswitch\u8bed\u6cd5\uff0c\u56e0\u6b64\u5b98\u65b9\u5efa\u8bae\u4f7f\u7528if else\u6765\u4ee3\u66ffswitch\u8bed\u53e5\u3002\u5176\u5b9e\uff0c\u4f7f\u7528if else \u4ee3\u66ffswitch\u8bed\u6cd5\u7ed3\u6784\uff0c\u5e76\u4e0d\u662f\u5f88\u597d\u7684\u89e3\u51b3\u65b9\u6848\u3002\n\n\n\u8fd9\u91cc\u6211\u4eec\u901a\u8fc7\u5b57\u5178\u7684\u6620\u5c04\u5b9e\u73b0switch\u8bed\u53e5\u3002\n\n\n\u5b9a\u4e49value\u4e3a\u5b57\u7b26\u4e32\u7684switch\u8bed\u53e5\n#\n\n\n\u6f14\u793a\uff1a\n\n\nday\n \n=\n \n1\n\n\nswitcher\n \n=\n \n{\n\n    \n0\n:\n \n'sunday'\n,\n\n    \n1\n:\n \n'monday'\n,\n\n    \n2\n:\n \n'tuesday'\n\n\n}\n\n\n\nday_name\n \n=\n \nswitcher\n.\nget\n(\nday\n,\n \n'unkown'\n)\n\n\n\nprint\n(\nday_name\n)\n\n\n\n# \u8f93\u51fa\u7ed3\u679c: monday\n\n\n\n\n\n\n\u5b9a\u4e49value\u4e3a\u51fd\u6570\u7684switch\u8bed\u53e5\n#\n\n\n\u901a\u8fc7\u4f7f\u7528\u51fd\u6570\u4f5c\u4e3a\u5b57\u5178\u7684value\uff0c\u6765\u6269\u5c55switch\u8bed\u53e5\u7684\u529f\u80fd\u3002\n\n\nday\n \n=\n \n2\n\n\n\n\ndef\n \nget_sunday\n():\n\n    \nreturn\n \n'sunday'\n\n\n\n\ndef\n \nget_monday\n():\n\n    \nreturn\n \n'monday'\n\n\n\n\ndef\n \nget_tuesday\n():\n\n    \nreturn\n \n'tuesday'\n\n\n\n\ndef\n \nget_default\n():\n\n    \nreturn\n \n'unkown'\n\n\n\n\nswitcher\n \n=\n \n{\n\n    \n0\n:\n \nget_sunday\n,\n\n    \n1\n:\n \nget_monday\n,\n\n    \n2\n:\n \nget_tuesday\n\n\n}\n\n\n\nday_name\n \n=\n \nswitcher\n.\nget\n(\nday\n,\n \nget_default\n)()\n\n\n\nprint\n(\nday_name\n)\n\n\n\n# \u8f93\u51fa\u7ed3\u679c: tuesday\n\n\n\n\n\n\n#",
+            "title": "\u5b57\u5178\u4ee3\u66ffswitch"
+        },
+        {
+            "location": "/pynic/1/#valueswitch",
+            "text": "\u6f14\u793a\uff1a  day   =   1  switcher   =   { \n     0 :   'sunday' , \n     1 :   'monday' , \n     2 :   'tuesday'  }  day_name   =   switcher . get ( day ,   'unkown' )  print ( day_name )  # \u8f93\u51fa\u7ed3\u679c: monday",
+            "title": "\u5b9a\u4e49value\u4e3a\u5b57\u7b26\u4e32\u7684switch\u8bed\u53e5"
+        },
+        {
+            "location": "/pynic/1/#valueswitch_1",
+            "text": "\u901a\u8fc7\u4f7f\u7528\u51fd\u6570\u4f5c\u4e3a\u5b57\u5178\u7684value\uff0c\u6765\u6269\u5c55switch\u8bed\u53e5\u7684\u529f\u80fd\u3002  day   =   2  def   get_sunday (): \n     return   'sunday'  def   get_monday (): \n     return   'monday'  def   get_tuesday (): \n     return   'tuesday'  def   get_default (): \n     return   'unkown'  switcher   =   { \n     0 :   get_sunday , \n     1 :   get_monday , \n     2 :   get_tuesday  }  day_name   =   switcher . get ( day ,   get_default )()  print ( day_name )  # \u8f93\u51fa\u7ed3\u679c: tuesday",
+            "title": "\u5b9a\u4e49value\u4e3a\u51fd\u6570\u7684switch\u8bed\u53e5"
+        },
+        {
+            "location": "/pynic/2/",
+            "text": "\u5217\u8868\u63a8\u5bfc\u5f0f\n#\n\n\n\u96c6\u5408\u63a8\u5bfc\u5f0f\n#\n\n\n\u5b57\u5178\u63a8\u5bfc\u5f0f\n#\n\n\n\u751f\u6210\u5668\u63a8\u5bfc\u5f0f\n#",
+            "title": "\u63a8\u5bfc\u5f0f"
+        },
+        {
+            "location": "/pynic/2/#_1",
+            "text": "",
+            "title": "\u5217\u8868\u63a8\u5bfc\u5f0f"
+        },
+        {
+            "location": "/pynic/2/#_2",
+            "text": "",
+            "title": "\u96c6\u5408\u63a8\u5bfc\u5f0f"
+        },
+        {
+            "location": "/pynic/2/#_3",
+            "text": "",
+            "title": "\u5b57\u5178\u63a8\u5bfc\u5f0f"
+        },
+        {
+            "location": "/pynic/2/#_4",
+            "text": "",
+            "title": "\u751f\u6210\u5668\u63a8\u5bfc\u5f0f"
+        }
+    ]
+}
