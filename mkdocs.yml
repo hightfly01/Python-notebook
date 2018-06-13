@@ -28,6 +28,7 @@ pages:
   - operator: 'lib/6.md'
   - os/sys: 'lib/7.md'
   - operator: 'lib/8.md'
+  - inspect: 'lib/9.md'
 - 内存管理机制:
   - 内存管理: 'memory/1.md'
 - pythonic:
